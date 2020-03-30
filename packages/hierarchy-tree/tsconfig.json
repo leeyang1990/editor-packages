@@ -1,0 +1,25 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "target": "es5",
+      "lib": [
+        "es7",
+        "dom"
+      ],
+      "module": "ESNext",
+      "declaration": true,
+      "outDir": "./dist",
+      "sourceMap": true,
+      "declarationDir": "./dist/types/",
+      "strict": false,
+      "esModuleInterop": true,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "declarationMap": true
+    },
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }

@@ -1,0 +1,23 @@
+{
+  "name": "@editor-packages/hierarchy-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/hierarchyTree.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "types": "./dist/types/hierarchyTree.d.ts",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^4.0.0",
+    "classnames": "^2.2.6",
+    "eventemitter2": "^6.0.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "rollup": "^2.3.0",
+    "tslib": "^1.11.1",
+    "typescript": "^3.7.5",
+    "uuid": "^3.4.0"
+  }
+}

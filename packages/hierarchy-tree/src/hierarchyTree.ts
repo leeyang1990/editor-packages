@@ -4,7 +4,7 @@ import { EventEmitter2 } from "eventemitter2";
 import Tree from "./tree";
 import uuidV4 from "uuid/v4";
 
-export class Config {
+export interface Config {
   autoDeselect?: boolean;
   draggable?: boolean;
   editable?: boolean;
@@ -38,7 +38,7 @@ export default class HierarchyTree extends EventEmitter2 {
     this.target = target;
     // this.reload(data);
     // this.render();
-
+    console.log(111)
     this.on("changes.applied", () => {
       this.render();
     });

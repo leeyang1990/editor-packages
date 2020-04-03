@@ -1,1 +1,1 @@
-# editor-packages
+# @editor-packages

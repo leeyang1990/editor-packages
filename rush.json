@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "2.15.1",
+  "pnpmVersion": "3.6.1",
 
   // "npmVersion": "4.5.0",
   // "yarnVersion": "1.9.4",
@@ -85,7 +85,7 @@
    * Specify a SemVer range to ensure developers use a Node.js version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=10.13.0 <11.0.0",
+  "nodeSupportedVersionRange": ">=10.13.0 <=12.16.1",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -391,6 +391,11 @@
     {
       "packageName": "tree-test",
       "projectFolder": "test/tree-test",
+      "reviewCategory": "tests"
+    },
+    {
+      "packageName": "electron-test",
+      "projectFolder": "test/electron-test",
       "reviewCategory": "tests"
     }
   ]

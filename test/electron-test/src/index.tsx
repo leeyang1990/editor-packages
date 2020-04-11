@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import HierarchyTree from "@editor-packages/hierarchy-tree";
 import "@editor-packages/hierarchy-tree/dist/hierarchy-tree.css";
-// import lottie from "lottie-web";
 class App extends Component {
   tree: HierarchyTree;
   constructor() {

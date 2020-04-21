@@ -5,8 +5,9 @@
   "main": "./dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch":"webpack --config ./webpack.config.js --progress --display-error-details --watch",
-    "run":"electron ."
+    "watch": "webpack --config ./webpack.config.js --progress --display-error-details --watch",
+    "run": "electron .",
+    "build": "echo build eletron-test"
   },
   "author": "",
   "license": "ISC",

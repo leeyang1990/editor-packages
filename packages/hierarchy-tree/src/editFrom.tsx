@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { TreeNode } from "./hierarchyTree";
+import HierarchyTree, { TreeNode } from ".";
 import * as KeyCode from './utils/keycode';
 const EditForm: React.FC<any> = ((props) => {
     const treenode: TreeNode = props.treenode;

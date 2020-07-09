@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Node from "./node";
-import { TreeNode } from "./hierarchyTree";
+import { TreeNode } from ".";
 import classNames from "classnames";
+import tree from "./tree";
 
 const NodeList: React.FC<any> = props => {
   const treenode: TreeNode = props.treenode;

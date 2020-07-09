@@ -1,5 +1,5 @@
 import React, { MouseEvent, useRef, useState,useEffect } from "react";
-import HierarchyTree, { TreeNode } from "./hierarchyTree";
+import HierarchyTree, { TreeNode } from ".";
 import classNames from "classnames";
 import EditForm from "./editFrom";
 const Node: React.FC<any> = props => {
@@ -310,7 +310,7 @@ const Node: React.FC<any> = props => {
     <div className={classNames("node", overed ? "drag-targeting" : "")}>
       {toggle()}
       <a {...attributes} ref={node => {}}>
-        {!treenode.editing() ? treenode.text : <EditForm treenode={treenode} />}
+        {!(treenode.tree.config.draggable&&treenode.editing()) ? treenode.text : <EditForm treenode={treenode} />}
         {}
       </a>
     </div>

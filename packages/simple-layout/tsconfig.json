@@ -1,0 +1,23 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "target": "ESNEXT",
+      "lib": [
+        "es7",
+        "dom"
+      ],
+      "module": "commonjs",
+      "declaration": true,
+      "outDir": "./dist",
+      "sourceMap": true,
+      "strict": false,
+      "esModuleInterop": true,
+      "moduleResolution": "node"
+    },
+    "exclude": [
+      "node_modules",
+      "dist",
+      "test"
+    ]
+  }

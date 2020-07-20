@@ -1,25 +1,24 @@
 {
-    "compileOnSave": true,
-    "compilerOptions": {
-      "experimentalDecorators": true,
-      "target": "es5",
-      "lib": [
-        "es7",
-        "dom"
-      ],
-      "module": "ESNext",
-      "declaration": true,
-      "outDir": "./dist",
-      "sourceMap": true,
-      "declarationDir": "./dist/types/",
-      "strict": false,
-      "esModuleInterop": true,
-      "jsx": "react",
-      "moduleResolution": "node",
-      "declarationMap": true
-    },
-    "exclude": [
-      "node_modules",
-      "dist"
-    ]
-  }
+  "compileOnSave": true,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "ESNEXT",
+    "lib": [
+      "es7",
+      "dom"
+    ],
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test"
+  ]
+}

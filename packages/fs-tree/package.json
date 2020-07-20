@@ -1,0 +1,24 @@
+{
+  "name": "fs-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hierarchy-tree": "1.0.0",
+    "directory-tree": "~2.2.4",
+    "vscode-icons-js": "~10.1.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  }
+}

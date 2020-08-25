@@ -135,7 +135,7 @@ class App extends React.Component<any> {
           }}
         ></div>
         <input onChange={this.handleChange.bind(this)}/>
-        hierarchy-tree
+        search
       </div>
     );
   }

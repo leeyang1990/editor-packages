@@ -85,7 +85,7 @@
    * Specify a SemVer range to ensure developers use a Node.js version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=10.13.0 <=12.16.1",
+  "nodeSupportedVersionRange": ">=10.13.0 <=12.18.3",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -387,16 +387,6 @@
       "packageName": "@editor-packages/hierarchy-tree",
       "projectFolder": "packages/hierarchy-tree",
       "reviewCategory": "libraries"
-    },
-    {
-      "packageName": "tree-test",
-      "projectFolder": "test/tree-test",
-      "reviewCategory": "tests"
-    },
-    {
-      "packageName": "electron-test",
-      "projectFolder": "test/electron-test",
-      "reviewCategory": "tests"
     }
   ]
 }

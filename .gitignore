@@ -77,3 +77,6 @@ dist
 
 # Remove eventually
 package-deps.json
+
+**node_modules/
+**dist/

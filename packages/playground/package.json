@@ -1,0 +1,123 @@
+{
+	"name": "@editor-packages/playground",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/main.js",
+	"scripts": {
+		"watch": "cross-env NODE_ENV=development webpack --config=webpack.config.js --watch --mode=development",
+		"dev": "electron .",
+		"build": "echo playground",
+		"build-pro": "rimraf ./dist && webpack --mode=production",
+		"cleanpackage": "rimraf ./out-builder",
+		"bundle": "rimraf ./dist && webpack",
+		"build-win-installer": "npm run cleanpackage && cross-env NODE_ENV=production webpack --config=webpack.config.js && electron-builder --x64=true",
+		"build-mac-installer": "npm run cleanpackage && cross-env NODE_ENV=production webpack --config=webpack.config.js && electron-builder",
+		"build-all": "npm run cleanpackage && cross-env NODE_ENV=production webpack --config=webpack.config.js && electron-builder -mwl"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"golden-layout": "^1.5.9"
+	},
+	"devDependencies": {
+		"copy-webpack-plugin": "^6.0.3",
+		"cross-env": "^7.0.2",
+		"css-loader": "^3.6.0",
+		"electron": "^10.1.5",
+		"electron-builder": "^22.9.1",
+		"file-loader": "^6.0.0",
+		"fork-ts-checker-webpack-plugin": "^5.0.7",
+		"html-webpack-plugin": "^4.3.0",
+		"lit-element": "^2.3.1",
+		"lit-html": "^1.2.1",
+		"lit-loader": "^0.1.1",
+		"rimraf": "^3.0.2",
+		"style-loader": "^1.2.1",
+		"ts-loader": "^8.0.1",
+		"typescript": "^3.9.7",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"build": {
+		"appId": "com.editor.playground",
+		"copyright": "editor",
+		"productName": "playground",
+		"asar": false,
+		"extraResources": [
+			{
+				"from": "tray_icon.png",
+				"to": "app/tray_icon.png"
+			}
+		],
+		"files": [
+			"main/**",
+			"dist/**",
+			"!**/**.ts",
+			"!**/**.map",
+			"package.json"
+		],
+		"compression": "normal",
+		"directories": {
+			"output": "./out-builder"
+		},
+		"win": {
+			"icon": "build/win/icon.ico",
+			"target": [
+				"nsis"
+			],
+			"publisherName": "Wander",
+			"signingHashAlgorithms": [
+				"sha256"
+			],
+			"rfc3161TimeStampServer": "http://timestamp.digicert.com"
+		},
+		"mac": {
+			"icon": "build/darwin/icon.icns",
+			"target": "dmg",
+			"type": "distribution",
+			"category": "public.app-category.developer-tools"
+		},
+		"dmg": {
+			"iconSize": 80,
+			"window": {
+				"width": 500,
+				"height": 300
+			},
+			"contents": [
+				{
+					"x": 135,
+					"y": 190
+				},
+				{
+					"x": 370,
+					"y": 190,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"nsis": {
+			"oneClick": false,
+			"allowToChangeInstallationDirectory": false,
+			"runAfterFinish": false,
+			"perMachine": true,
+			"allowElevation": true,
+			"uninstallDisplayName": "Uninstall tools playground",
+			"license": "build/win/zh_CN.license.txt",
+			"deleteAppDataOnUninstall": false,
+			"createDesktopShortcut": true,
+			"menuCategory": true,
+			"shortcutName": "playground",
+			"displayLanguageSelector": false,
+			"multiLanguageInstaller": true,
+			"installerLanguages": [
+				"zh-CN",
+				"en_US"
+			],
+			"language": "2052",
+			"unicode": true,
+			"include": "build/win/installer.nsh"
+		}
+	}
+}

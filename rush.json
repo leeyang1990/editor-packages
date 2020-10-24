@@ -387,6 +387,11 @@
       "packageName": "@editor-packages/hierarchy-tree",
       "projectFolder": "packages/hierarchy-tree",
       "reviewCategory": "libraries"
+    },
+    {
+      "packageName": "@editor-packages/playground",
+      "projectFolder": "packages/playground",
+      "reviewCategory": "production"
     }
   ]
 }

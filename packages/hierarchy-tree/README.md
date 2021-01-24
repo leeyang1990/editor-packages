@@ -1,6 +1,6 @@
 # hierarchy-tree 
 
-[![npm version](https://img.shields.io/npm/v/@editor-packages/hierarchy-tree.svg?style=flat)](https://www.npmjs.org/package/@editor-packages/hierarchy-treet)
+[![npm version](https://img.shields.io/npm/v/@editor-packages/hierarchy-tree.svg?style=flat)](https://www.npmjs.org/package/@editor-packages/hierarchy-tree)
 
 
 

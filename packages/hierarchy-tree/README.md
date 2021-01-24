@@ -1,8 +1,12 @@
-# hierarchy-tree
+# hierarchy-tree 
 
-层级树组件,树结构组件
+[![npm version](https://img.shields.io/npm/v/@editor-packages/hierarchy-tree.svg?style=flat)](https://www.npmjs.org/package/@editor-packages/hierarchy-treet)
 
-[![NPM Version](http://img.shields.io/npm/v/hierarchy-tree.svg?style=flat)](https://www.npmjs.org/package/@editor-packages/hierarchy-tree)
+
+
+## 层级树组件,树结构组件
+
+
 
 ### Tree 配置
 #### config

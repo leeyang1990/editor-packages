@@ -1,7 +1,16 @@
 {
   "name": "@editor-packages/hierarchy-tree",
   "version": "1.0.1",
-  "description": "",
+  "description": "tree view like unity hierarchy window",
+  "keywords": [
+    "tree view",
+    "herarchy",
+    "unity"
+  ],
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/leeyang1990/editor-packages/tree/master/packages/hierarchy-tree"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -11,7 +20,7 @@
     "tsc": "tsc",
     "less": "lessc ./index.less ./dist/hierarchy-tree.css"
   },
-  "author": "",
+  "author": "leeyang1990@mail.com",
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",

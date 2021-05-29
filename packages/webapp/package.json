@@ -1,0 +1,42 @@
+{
+  "name": "webapp",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "leeyang1990@mail.com",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/webapp.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "dev": "webpack serve --open  --mode development",
+    "build": "echo webapp",
+    "product": "rimraf ./dist && webpack --mode=production"
+  },
+  "dependencies": {
+    "editor-components": "^0.0.0",
+    "eventemitter3": "^4.0.7",
+    "lit": "^2.0.0-rc.2",
+    "postio": "^0.0.0",
+    "style-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.1.1",
+    "css-loader": "^5.2.5",
+    "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.2.10",
+    "html-webpack-plugin": "^5.3.1",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

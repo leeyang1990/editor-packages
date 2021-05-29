@@ -1,0 +1,34 @@
+{
+  "name": "postio",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "liyang <leeyang1990@gmail.com>",
+  "homepage": "https://github.com/leeyang1990/editor-packages#readme",
+  "license": "ISC",
+  "main": "lib/postIO.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeyang1990/editor-packages.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/leeyang1990/editor-packages/issues"
+  },
+  "dependencies": {
+    "eventemitter3": "^4.0.7"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4"
+  }
+}
